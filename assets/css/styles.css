@@ -1,0 +1,15 @@
+
+.custom-container {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.custom-submenu-container{ height: 30px; }
+
+.zoom-effect {
+    transition: transform 0.2s;
+  }
+  
+  .zoom-effect:hover {
+    transform: scale(1.05);
+  }

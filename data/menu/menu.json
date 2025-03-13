@@ -1,0 +1,77 @@
+{
+    "menu": [
+      {
+        "id": "environmental",
+        "name": "Environmental",
+        "description": "Environmental solutions and initiatives.",
+        "isSubmenu": true,
+        "submenu": [
+          {
+            "id": 1.1,
+            "name": "Air Quality Monitoring",
+            "description": "Real-time monitoring of air pollutants."
+          },
+          {
+            "id": 1.2,
+            "name": "Water Conservation",
+            "description": "Efficient water management systems."
+          }
+        ]
+      },
+      {
+        "id": "smart-cities",
+        "name": "Smart City",
+        "description": "Smart city infrastructure and services.",
+        "isSubmenu": true,
+        "submenu": [
+          {
+            "id": 2.1,
+            "name": "Smart Lighting",
+            "description": "Energy-efficient street lighting solutions."
+          },
+          {
+            "id": 2.2,
+            "name": "Traffic Management",
+            "description": "Real-time traffic monitoring and optimization."
+          }
+        ]
+      },
+      {
+        "id": "manufacturing",
+        "name": "Manufacturing",
+        "description": "Manufacturing solutions and technologies.",
+        "isSubmenu": true,
+        "submenu": [
+          {
+            "id": 3.1,
+            "name": "Automation Systems",
+            "description": "Industrial automation and robotics."
+          },
+          {
+            "id": 3.2,
+            "name": "Quality Control",
+            "description": "Advanced quality control and inspection systems."
+          }
+        ]
+      },
+      {
+        "id": "power-grids",
+        "name": "Power Grids",
+        "description": "Power grid management and optimization.",
+        "isSubmenu": true,
+        "submenu": [
+          {
+            "id": 4.1,
+            "name": "Grid Modernization",
+            "description": "Upgrading grid infrastructure for efficiency."
+          },
+          {
+            "id": 4.2,
+            "name": "Renewable Energy Integration",
+            "description": "Integrating solar and wind energy into the grid."
+          }
+        ]
+      }
+    ]
+  }
+  

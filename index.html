@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Twin Examples</title>
+    <title>Wiki DT</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="assets/js/script.js"></script>
@@ -15,12 +15,12 @@
 
 
 
-<body class = "custom-body">
+<body class="custom-body">
 
     <!-- Navigation Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Digital Twin Examples</a>
+            <a class="navbar-brand" href="#">Digital Twin Wiki</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,13 +36,13 @@
 
     <!--Sub menu nav bar container-->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top mt-5 custom-submenu-container">
-            <div class="container">
-                <ul id="submenu-container" class="navbar-nav ms-auto ">
-                    <!-- Submenu items will be added here by javascript function--->
-                </ul>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top mt-5 custom-submenu-container">
+        <div class="container">
+            <ul id="submenu-container" class="navbar-nav ms-auto ">
+                <!-- Submenu items will be added here by javascript function--->
+            </ul>
+        </div>
+    </nav>
 
 
 
@@ -50,108 +50,127 @@
 
     <div class="custom-container  mt-4" style="margin-left: 50; margin-right: 50;">
         <br>
-
-        <!-- Smart Cities -->
-        <div id="smart-cities" class="card bg-info text-dark content-card mt-5 glow-effect zoom-effect">
-            <div class="card-body">
-                <h2>Smart Cities</h2>
-                <div class="row">
-                    <div class="col-md-2">
-                        <!-- Image for the first column -->
-                        <img src="./media/photo/smart-city.jpg" alt="Smart City Digital Twin" class="img-fluid custom-image" >
+        <div class="row">
+            <div class="col-md-2 card bg-info ">
+                <nav class="navbar  ">
+                    <div class="container ">
+                        <ul id="leftmenu-container" class="navbar-nav ms-auto custom-left-fixed-submenu">
+                            <!-- Submenu items will be added here by javascript function--->
+                        </ul>
                     </div>
-                    <div class="col-md-8">
-                        <!-- Content for the second column -->
+                </nav>
 
+
+            </div>
+
+            <div class="col-md-10">
+
+                <!-- Smart Cities -->
+                <div id="smart-cities" class="card bg-info text-dark content-card mt-5 zoom-effect custom-card">
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col-md-2">
+                                <!-- Image for the first column -->
+                                <img src="./media/photo/smart-city.jpg" alt="Smart City Digital Twin"
+                                    class="img-fluid custom-image">
+                            </div>
+                            <div class="col-md-8">
+                                <!-- Content for the second column -->
+<h2>Smart Cities</h2>
+                                <p>Smart city digital twins help urban planners optimize traffic flow, reduce energy
+                                    consumption, and
+                                    improve public safety.</p>
+                                <p>They enable cities to make data-driven decisions by simulating different scenarios
+                                    before
+                                    applying
+                                    real-world changes.</p>
+
+                            </div>
+                            <div class="col-md-2">
+                                <!-- Keywords for the third column -->
+                                <p><strong>Keywords: </strong>Smart cities, digital twin, intelligent cities,</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Environmental -->
+                <div id="smart-cities" class="card bg-warning text-dark content-card mt-5">
+                    <div class="card-body">
+                        <h2>Smart Cities</h2>
+                        <img src="https://via.placeholder.com/300" alt="Smart City Digital Twin" class="image-left">
                         <p>Smart city digital twins help urban planners optimize traffic flow, reduce energy
                             consumption, and
                             improve public safety.</p>
                         <p>They enable cities to make data-driven decisions by simulating different scenarios before
                             applying
                             real-world changes.</p>
-
                     </div>
-                    <div class="col-md-2">
-                        <!-- Keywords for the third column -->
-                        <p><strong>Keywords: </strong>Smart cities, digital twin, intelligent cities,</p>
+                </div>
 
+
+                <!-- Manufacturing -->
+                <div id="manufacturing" class="card bg-primary text-white content-card mt-5">
+                    <div class="card-body">
+                        <h2>Manufacturing</h2>
+                        <img src="https://via.placeholder.com/300" alt="Manufacturing Digital Twin" class="image-left">
+                        <p>Digital twins in manufacturing allow companies to create virtual models of their production
+                            lines.
+                            These models help optimize operations, reduce downtime, and improve efficiency.</p>
+                        <p>By simulating processes and testing changes before implementation, manufacturers can save
+                            time and
+                            costs.</p>
+                    </div>
+                </div>
+
+                <!-- Healthcare -->
+                <div id="healthcare" class="card bg-success text-white content-card mt-5">
+                    <div class="card-body">
+                        <h2>Healthcare</h2>
+                        <img src="https://via.placeholder.com/300" alt="Healthcare Digital Twin" class="image-left">
+                        <p>In healthcare, digital twins of patients help doctors make more accurate diagnoses and
+                            personalized
+                            treatment plans.</p>
+                        <p>By creating a real-time simulation of a patient’s health status, doctors can predict outcomes
+                            and
+                            improve care.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- Automotive -->
+                <div id="automotive" class="card bg-danger text-white content-card mt-5">
+                    <div class="card-body">
+                        <h2>Automotive</h2>
+                        <img src="https://via.placeholder.com/300" alt="Automotive Digital Twin" class="image-left">
+                        <p>Automakers use digital twins to simulate vehicle performance, safety, and maintenance
+                            predictions.
+                        </p>
+                        <p>By analyzing real-world driving data, manufacturers can improve vehicle efficiency and safety
+                            features.</p>
+                    </div>
+                </div>
+
+                <!-- Energy Sector -->
+                <div id="energy" class="card bg-info text-white content-card mt-5">
+                    <div class="card-body">
+                        <h2>Energy Sector</h2>
+                        <img src="https://via.placeholder.com/300" alt="Energy Sector Digital Twin" class="image-left">
+                        <p>Energy companies use digital twins to monitor and optimize power grids, wind farms, and other
+                            infrastructure.</p>
+                        <p>These simulations help predict maintenance needs, reduce downtime, and increase efficiency.
+                        </p>
                     </div>
                 </div>
             </div>
+
         </div>
-
-
-        <!-- Environmental -->
-        <div id="smart-cities" class="card bg-warning text-dark content-card mt-5">
-            <div class="card-body">
-                <h2>Smart Cities</h2>
-                <img src="https://via.placeholder.com/300" alt="Smart City Digital Twin" class="image-left">
-                <p>Smart city digital twins help urban planners optimize traffic flow, reduce energy
-                    consumption, and
-                    improve public safety.</p>
-                <p>They enable cities to make data-driven decisions by simulating different scenarios before
-                    applying
-                    real-world changes.</p>
-            </div>
-        </div>
-
-
-        <!-- Manufacturing -->
-        <div id="manufacturing" class="card bg-primary text-white content-card mt-5">
-            <div class="card-body">
-                <h2>Manufacturing</h2>
-                <img src="https://via.placeholder.com/300" alt="Manufacturing Digital Twin" class="image-left">
-                <p>Digital twins in manufacturing allow companies to create virtual models of their production
-                    lines.
-                    These models help optimize operations, reduce downtime, and improve efficiency.</p>
-                <p>By simulating processes and testing changes before implementation, manufacturers can save
-                    time and
-                    costs.</p>
-            </div>
-        </div>
-
-        <!-- Healthcare -->
-        <div id="healthcare" class="card bg-success text-white content-card mt-5">
-            <div class="card-body">
-                <h2>Healthcare</h2>
-                <img src="https://via.placeholder.com/300" alt="Healthcare Digital Twin" class="image-left">
-                <p>In healthcare, digital twins of patients help doctors make more accurate diagnoses and
-                    personalized
-                    treatment plans.</p>
-                <p>By creating a real-time simulation of a patient’s health status, doctors can predict outcomes
-                    and
-                    improve care.</p>
-            </div>
-        </div>
-
-
-
-        <!-- Automotive -->
-        <div id="automotive" class="card bg-danger text-white content-card mt-5">
-            <div class="card-body">
-                <h2>Automotive</h2>
-                <img src="https://via.placeholder.com/300" alt="Automotive Digital Twin" class="image-left">
-                <p>Automakers use digital twins to simulate vehicle performance, safety, and maintenance
-                    predictions.
-                </p>
-                <p>By analyzing real-world driving data, manufacturers can improve vehicle efficiency and safety
-                    features.</p>
-            </div>
-        </div>
-
-        <!-- Energy Sector -->
-        <div id="energy" class="card bg-info text-white content-card mt-5">
-            <div class="card-body">
-                <h2>Energy Sector</h2>
-                <img src="https://via.placeholder.com/300" alt="Energy Sector Digital Twin" class="image-left">
-                <p>Energy companies use digital twins to monitor and optimize power grids, wind farms, and other
-                    infrastructure.</p>
-                <p>These simulations help predict maintenance needs, reduce downtime, and increase efficiency.
-                </p>
-            </div>
-        </div>
-
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,0 +1,88 @@
+{
+    "sections": [
+        {
+            "id": "1-smart-cities",
+                        "color": "#FF5722",
+            "image": {
+                "src": "./media/photo/smart-city.jpg",
+                "alt": "Smart City Digital Twin",
+                "class": "img-fluid custom-image"
+            },
+            "content": {
+                "title": "Smart Cities",
+                "paragraphs": [
+                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
+                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
+                ],
+                "keywords": [
+                    "Smart cities",
+                    "digital twin",
+                    "intelligent cities"
+                ]
+            }
+        },
+        {
+            "id": "2-environmental",
+            "color": "#2196F3",
+            "image": {
+                "src": "./media/photo/smart-city.jpg",
+                "alt": "Environmental Digital Twin",
+                "class": "img-fluid custom-image"
+            },
+            "content": {
+                "title": "Environmental",
+                "paragraphs": [
+                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
+                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
+                ],
+                "keywords": [
+                    "environmental Systems",
+                    "digital twin",
+                    "flood prevention"
+                ]
+            }
+        },
+        {
+            "id": "3-power-grids",
+            "color": "#4CAF50",
+            "image": {
+                "src": "./media/photo/smart-city.jpg",
+                "alt": "Power Digital Twin",
+                "class": "img-fluid custom-image"
+            },
+            "content": {
+                "title": "Power Grids",
+                "paragraphs": [
+                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
+                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
+                ],
+                "keywords": [
+                    "Power Grids",
+                    "digital twin",
+                    "intelligent grids"
+                ]
+            }
+        },
+        {
+            "id": "4-others",
+            "color": "#FFC107",
+            "image": {
+                "src": "./media/photo/smart-city.jpg",
+                "alt": "Others",
+                "class": "img-fluid custom-image"
+            },
+            "content": {
+                "title": "Others",
+                "paragraphs": [
+                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
+                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
+                ],
+                "keywords": [
+                    "Smart cities",
+                    "digital twin",
+                    "intelligent cities"
+                ]
+            }
+        }
+    ]
+}

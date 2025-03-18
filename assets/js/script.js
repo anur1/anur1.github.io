@@ -102,3 +102,29 @@ function function4_homePage() {
         })
         .catch(error => console.error('Error:', error));
 }
+
+
+/*navbarLoader.js:
+The loadNavbar function takes two parameters:
+placeholderId: The ID of the element where the navbar will be inserted.
+navbarPath: The path to the navbar.html file.
+It uses fetch to load the HTML content and inserts it into the specified placeholder.*/ 
+function loadNavbar(placeholderId, navbarPath) {
+    fetch(navbarPath)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(placeholderId).innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+}
+
+
+
+function leftSubmenu(placeholderId, leftsubmenuPath) {
+    fetch(leftsubmenuPath)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(placeholderId).innerHTML = data;
+        })
+        .catch(error => console.error('Error loading submenu:', error));
+}

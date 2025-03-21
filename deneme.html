@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Column Card Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Custom CSS for 5-column layout on larger screens */
+        @media (min-width: 1200px) {
+            .custom-cols {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Five Column Card Layout</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 custom-cols">
+        <div class="col">
+            <div class="card h-100" style="background-color: #F0FFF0;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 13</h5>
+                    <p class="card-text">This is a description for Card 13. It highlights the main features and applications of
+                        this card's topic.</p>
+                    <a href="#" class="btn btn-primary">Analyze</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #FFE4E1;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 14</h5>
+                    <p class="card-text">This is a description for Card 14. It outlines the key concepts and potential impact of
+                        this card's subject.</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #E0FFFF;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 15</h5>
+                    <p class="card-text">This is a description for Card 15. It provides an overview of the main aspects and
+                        significance of this card's content.</p>
+                    <a href="#" class="btn btn-primary">Discover</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #FFF0F5;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 16</h5>
+                    <p class="card-text">This is a description for Card 16. It elaborates on the unique features and importance
+                        of this card's topic.</p>
+                    <a href="#" class="btn btn-primary">Investigate</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #F0F8FF;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 17</h5>
+                    <p class="card-text">This is a description for Card 17. It summarizes the core elements and relevance of
+                        this card's subject.</p>
+                    <a href="#" class="btn btn-primary">Examine</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #FFFACD;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 18</h5>
+                    <p class="card-text">This is a description for Card 18. It introduces the primary concepts and implications
+                        of this card's content.</p>
+                    <a href="#" class="btn btn-primary">Study</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #E6E6FA;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 19</h5>
+                    <p class="card-text">This is a description for Card 19. It presents the key aspects and potential
+                    applications of this card's topicThis is a description for Card 19. It presents the key aspects and potential
+                    applications of this card's topicThis is a description for Card 19. It presents the key aspects and potential
+                    applications of this card's topic.</p>
+                    <a href="#" class="btn btn-primary">Review</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #FFF5EE;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 20</h5>
+                    <p class="card-text">This is a description for Card 20. It outlines the main features and significance of
+                        this card's subject.</p>
+                    <a href="#" class="btn btn-primary">Evaluate</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #F0FFFF;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 21</h5>
+                    <p class="card-text">This is a description for Card 21. It highlights the core concepts and potential impact
+                        of this card's content.</p>
+                    <a href="#" class="btn btn-primary">Inspect</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #FFF0F5;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 22</h5>
+                    <p class="card-text">This is a description for Card 22. It provides an overview of the key elements and
+                        applications of this card's topic.</p>
+                    <a href="#" class="btn btn-primary">Observe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #F5F5DC;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 23</h5>
+                    <p class="card-text">This is a description for Card 23. It summarizes the main aspects and importance of
+                        this card's subject.</p>
+                    <a href="#" class="btn btn-primary">Investigate</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #E0FFFF;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 24</h5>
+                    <p class="card-text">This is a description for Card 24. It elaborates on the unique features and relevance
+                        of this card's content.</p>
+                    <a href="#" class="btn btn-primary">Analyze</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #F0FFF0;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 25</h5>
+                    <p class="card-text">This is a description for Card 25. It presents the core concepts and potential
+                        applications of this card's topic.</p>
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #FFE4E1;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 26</h5>
+                    <p class="card-text">This is a description for Card 26. It outlines the key aspects and significance of this
+                        card's subject.</p>
+                    <a href="#" class="btn btn-primary">Discover</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background-color: #E0FFFF;">
+                <img src="./media/photo/smart-city.jpg" class="card-img-top" alt="Placeholder image">
+                <div class="card-body">
+                    <h5 class="card-title">Card 27</h5>
+                    <p class="card-text">This is a description for Card 27. It provides an overview of the main features and
+                        implications of this card's content.</p>
+                    <a href="#" class="btn btn-primary">Evaluate</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

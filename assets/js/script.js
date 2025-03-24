@@ -20,7 +20,7 @@ function function4_menuItems() {
             // Add main menu items to navigation menu
             data.menu.forEach(item => {
                 const itemElement = document.createElement('div');
-                itemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${item.id}">${item.name}</a></li>`;
+                itemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${item.id}.html">${item.name}</a></li>`;
                 menuContainer.appendChild(itemElement);
 
 

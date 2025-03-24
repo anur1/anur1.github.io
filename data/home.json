@@ -1,8 +1,9 @@
 {
     "sections": [
         {
-            "id": "1-smart-cities",
-                        "color": "#FF5722",
+            "id": "smart-cities",
+            "link": "smart-cities",
+             "color": "#FF5722",
             "image": {
                 "src": "./media/photo/smart-city.jpg",
                 "alt": "Smart City Digital Twin",
@@ -22,7 +23,8 @@
             }
         },
         {
-            "id": "2-environmental",
+            "id": "environmental",
+            "link": "environmental",
             "color": "#2196F3",
             "image": {
                 "src": "./media/photo/smart-city.jpg",
@@ -43,7 +45,8 @@
             }
         },
         {
-            "id": "3-power-grids",
+            "id": "power-grids",
+            "link": "power-grids",
             "color": "#4CAF50",
             "image": {
                 "src": "./media/photo/smart-city.jpg",
@@ -64,7 +67,8 @@
             }
         },
         {
-            "id": "4-others",
+            "id": "others",
+            "link": "others",
             "color": "#FFC107",
             "image": {
                 "src": "./media/photo/smart-city.jpg",

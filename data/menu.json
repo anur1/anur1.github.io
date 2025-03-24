@@ -1,5 +1,24 @@
 {
   "menu": [
+      {
+        "id": "smart-cities",
+        "name": "Smart-cities",
+        "description": "Smart city infrastructure and services.",
+        "color": "#2196F3",
+        "isSubmenu": true,
+        "submenu": [
+          {
+            "id": 2.1,
+            "name": "Smart Lighting",
+            "description": "Energy-efficient street lighting solutions."
+          },
+          {
+            "id": 2.2,
+            "name": "Traffic Management",
+            "description": "Real-time traffic monitoring and optimization."
+          }
+        ]
+      },
     {
       "id": "environmental",
       "name": "Environmental",
@@ -19,25 +38,7 @@
         }
       ]
     },
-    {
-      "id": "smart-cities",
-      "name": "Smart City",
-      "description": "Smart city infrastructure and services.",
-      "color": "#2196F3",
-      "isSubmenu": true,
-      "submenu": [
-        {
-          "id": 2.1,
-          "name": "Smart Lighting",
-          "description": "Energy-efficient street lighting solutions."
-        },
-        {
-          "id": 2.2,
-          "name": "Traffic Management",
-          "description": "Real-time traffic monitoring and optimization."
-        }
-      ]
-    },
+  
     {
       "id": "manufacturing",
       "name": "Manufacturing",

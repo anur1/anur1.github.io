@@ -2,13 +2,13 @@
 //Listen if Html page is loaded, if loaded call menuItems 
 window.addEventListener('DOMContentLoaded', function () {
     function4_menuItems();
-    function4_homePage();
-    function4_subPage();
+    function4_homePage(); //default home page
+    function4_subPage_smartCities(); //default sub page for smart cities
 });
 
 // Menu 
 function function4_menuItems() {
-    fetch('./data/menu/menu.json')
+    fetch('./data/menu.json')
         .then(response => response.json())
         .then(data => {
             const menuContainer = document.getElementById('menu-container');
@@ -86,7 +86,7 @@ function leftSubmenu(placeholderId, leftsubmenuPath) {
 
 
 function function4_homePage() {
-    fetch('./data/menu/home.json')
+    fetch('./data/home.json')
         .then(response => response.json())
         .then(data => {
             const mainCardContainer = document.getElementById('main-card-container');
@@ -134,47 +134,32 @@ function function4_homePage() {
 
 
 
-function function4_subPage() {
-    fetch('./data/menu/home.json')
+function function4_subPage_smartCities() {
+    fetch('./data/cards-smartCity.json')
         .then(response => response.json())
         .then(data => {
-            const mainCardContainer = document.getElementById('sub-card-container-environmental');
-
-            data.sections.forEach(item => {
+            const cardContainer = document.getElementById('sub-card-container-smartCities');
+            data.cards.forEach(item => {
+                console.log(item);
                 const cardElement = document.createElement('div');
-                const cardBackgroundColor = item.color; // Set background color
-                console.log(cardBackgroundColor);
                 cardElement.innerHTML = `
-
-                <div id="${item.id}" class="card bg-info text-dark content-card mt-5 zoom-effect custom-card" style="background-color:${cardBackgroundColor} !important">
-                    <div class="card-body">
-
-                        <div class="row">
-                            <div class="col-md-3 d-flex align-items-center">
-                                <!-- Image for the first column -->
-                                <img src="${item.image.src}"alt="Smart City Digital Twin"
-                                    class="img-fluid custom-image ">
-                            </div>
-
-                            <div class="col-md-7" id = "card-info-container">
-                                <!-- Content for the second column -->
-                                <h2>${item.content.title}</h2>
-                                <p>${item.content.paragraphs}</p>
-
-
-                            </div>
-                            <div class="col-md-2">
-                                <!-- Keywords for the third column -->
-                                <p><strong>Keywords: </strong>${item.content.keywords}</p>
-
-                            </div>
+                    <div class="col">
+                        <div class="card h-100" style="background-color: ${item.backgroundColor};">
+                            <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${item.title}</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">${item.subTitle}</h6>
+                                    <p class="card-text">${item.description}</p>
+                                    <a href="${item.buttonLink}" class="btn btn-primary">${item.buttonText}</a>
+                                </div>
                         </div>
-                    </div>
-                </div>
-                `;//end of cardElement.innerHTML
+                    </div >
+         
+
+                    `;//end of cardElement.innerHTML
 
                 //add above card element to the main card container
-                mainCardContainer.appendChild(cardElement);
+                cardContainer.appendChild(cardElement);
             });
 
         })

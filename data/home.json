@@ -10,6 +10,7 @@
                 "class": "img-fluid custom-image"
             },
             "content": {
+                "id": "smart-cities",
                 "title": "Smart Cities",
                 "paragraphs": [
                     "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",

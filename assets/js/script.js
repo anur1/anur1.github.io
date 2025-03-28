@@ -1,56 +1,143 @@
 
 //Listen if Html page is loaded, if loaded call menuItems 
 window.addEventListener('DOMContentLoaded', function () {
-    function4_menuItems();
-    function4_homePage(); //default home page
+    homePageContent(); //default home page
+
+    fill_menuItems();
     function4_subPage_smartCities(); //default sub page for smart cities
 });
 
 // Menu 
-function function4_menuItems() {
+function fill_menuItems() {
     fetch('./data/menu.json')
         .then(response => response.json())
         .then(data => {
+            //containers for upper - lower - sub menu items
             const menuContainer = document.getElementById('menu-container');
             const submenuContainer = document.getElementById('submenu-container');
             const leftmenuContainer = document.getElementById('leftmenu-container');
-
-
+            
 
             // Add main menu items to navigation menu
             data.menu.forEach(item => {
+                const activeItemId = item.id;
                 const itemElement = document.createElement('div');
-                itemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${item.id}.html">${item.name}</a></li>`;
+                itemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${activeItemId}">${item.name}</a></li>`;                
+
+                console.log(itemElement.innerHTML);
                 menuContainer.appendChild(itemElement);
 
 
-                // Add sub menu items to sub navigation menu
+                // Add sub menu items to sub navigation menu when main item is clicked
                 itemElement.addEventListener('click', () => {
+                    //event.preventDefault(); // Prevent the default link behavior
+
+                    // Remove the 'active' class from all menu items before new styling of clicked item
+                    const activeItems = menuContainer.getElementsByClassName('custom-nav-link');
+                    while (activeItems.length > 0) {
+                        activeItems[0].classList.remove('custom-nav-link');
+                    }
+
+                    // Add the 'active' class to the clicked menu item
+                    itemElement.classList.add('custom-nav-link');
+
                     submenuContainer.innerHTML = '';
-
-                    item.submenu.forEach(subItem => {
-                        const subItemElement = document.createElement('div');
-                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${subItem.id}">${subItem.name}</a></li>`;
-                        submenuContainer.appendChild(subItemElement);
-                    })
-                });
-
-
-                // Add sub menu items to left navigation menu
-                itemElement.addEventListener('click', () => {
                     leftmenuContainer.innerHTML = '';
 
+
+                    // Add sub menu items to sub navigation menu from menu.json file/menu/submenu/name
                     item.submenu.forEach(subItem => {
                         const subItemElement = document.createElement('div');
-                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${subItem.id}">${subItem.name}</a></li>`;
-                        leftmenuContainer.appendChild(subItemElement);
+                        const leftSubItemElement = document.createElement('div');
+                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${activeItemId}.html">${subItem.name}</a></li>`;
+                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${subItem.id}.html">${subItem.name}</a></li>`;
+                        submenuContainer.appendChild(subItemElement);
+                        leftmenuContainer.appendChild(leftSubItemElement);
 
+
+                        // Add event listener to sub menu items
+                        subItemElement.addEventListener('click', () => {
+                            //event.preventDefault(); // Prevent the default link behavior
+
+                            // Remove the 'active' class from all submenu items before new styling of clicked item
+                            const activeSubItems = submenuContainer.getElementsByClassName('custom-nav-link');
+                            const activeLeftSubItems = leftmenuContainer.getElementsByClassName('custom-nav-link');
+
+                            while (activeSubItems.length > 0) {
+                                activeSubItems[0].classList.remove('custom-nav-link');
+                                activeLeftSubItems[0].classList.remove('custom-nav-link');
+                            }
+
+                            // Add the 'active' class to the clicked submenu item
+                            subItemElement.classList.add('custom-nav-link');
+                            leftSubItemElement.classList.add('custom-nav-link');
+                        });
                     });
+
+                })
+
+                /*
+ 
+
+                  
+
+
                 });
+
+                */
+               
+
+
+
+
+                /*
+                
+                                // Add sub menu items to left navigation menu
+                                itemElement.addEventListener('click', () => {
+                                    event.preventDefault(); // Prevent the default link behavior
+                
+                                    submenuContainer.innerHTML = '';
+                                    leftmenuContainer.innerHTML = '';
+                
+                                    // Add sub menu items to sub navigation menu from menu.json file/menu/submenu/name
+                                    item.submenu.forEach(subItem => {
+                                        const subItemElement = document.createElement('div');
+                                        const leftSubItemElement = document.createElement('div');
+                
+                                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${subItem.id}">${subItem.name}</a></li>`;
+                                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${subItem.id}.html">${subItem.name}</a></li>`;
+                
+                                        submenuContainer.appendChild(subItemElement);
+                                        leftmenuContainer.appendChild(leftSubItemElement);
+                
+                                        // Add event listener to sub menu items
+                                        subItemElement.addEventListener('click', () => {
+                                            event.preventDefault(); // Prevent the default link behavior
+                
+                                            // Remove the 'active' class from all submenu items before new styling of clicked item
+                                            const activeSubItems = submenuContainer.getElementsByClassName('custom-nav-link');
+                                            const activeLeftSubItems = leftmenuContainer.getElementsByClassName('custom-nav-link');
+                                            
+                                            while (activeSubItems.length > 0) {
+                                                activeSubItems[0].classList.remove('custom-nav-link');
+                                                activeLeftSubItems[0].classList.remove('custom-nav-link');
+                                            }
+                
+                                            // Add the 'active' class to the clicked submenu item
+                                            subItemElement.classList.add('custom-nav-link');
+                                            leftSubItemElement.classList.add('custom-nav-link');
+                                        });
+                
+                                    });
+                                });
+                 */
 
 
 
             });
+
+
+            console.log(menuContainer);
 
         })
         .catch(error => console.error('Error:', error));
@@ -74,18 +161,22 @@ function loadNavbar(placeholderId, navbarPath) {
 
 
 
-function leftSubmenu(placeholderId, leftsubmenuPath) {
-    fetch(leftsubmenuPath)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(placeholderId).innerHTML = data;
-        })
-        .catch(error => console.error('Error loading submenu:', error));
+function loadLeftSubmenu(placeholderId, navbarPath) {
+    const placeholder = document.getElementById(placeholderId);
+    if (!placeholder.dataset.loaded) {
+        fetch(navbarPath)
+            .then(response => response.text())
+            .then(data => {
+                placeholder.innerHTML = data;
+                placeholder.dataset.loaded = true; // Mark as loaded
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    }
 }
 
 
 
-function function4_homePage() {
+function homePageContent() {
     fetch('./data/home.json')
         .then(response => response.json())
         .then(data => {

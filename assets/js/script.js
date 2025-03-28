@@ -2,12 +2,13 @@
 //Listen if Html page is loaded, if loaded call menuItems 
 window.addEventListener('DOMContentLoaded', function () {
     homePageContent(); //default home page
-
     fill_menuItems();
     function4_subPage_smartCities(); //default sub page for smart cities
 });
 
 // Menu 
+
+let selectedItemId = "smart-citites"; 
 function fill_menuItems() {
     fetch('./data/menu.json')
         .then(response => response.json())
@@ -16,18 +17,22 @@ function fill_menuItems() {
             const menuContainer = document.getElementById('menu-container');
             const submenuContainer = document.getElementById('submenu-container');
             const leftmenuContainer = document.getElementById('leftmenu-container');
+
+
             
 
             // Add main menu items to navigation menu
             data.menu.forEach(item => {
-                const activeItemId = item.id;
+                const ItemId = item.id;
                 const itemElement = document.createElement('div');
-                itemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${activeItemId}">${item.name}</a></li>`;                
+                itemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${ItemId}">${item.name}</a></li>`;
 
-                console.log(itemElement.innerHTML);
                 menuContainer.appendChild(itemElement);
 
 
+
+
+                
                 // Add sub menu items to sub navigation menu when main item is clicked
                 itemElement.addEventListener('click', () => {
                     //event.preventDefault(); // Prevent the default link behavior
@@ -49,8 +54,8 @@ function fill_menuItems() {
                     item.submenu.forEach(subItem => {
                         const subItemElement = document.createElement('div');
                         const leftSubItemElement = document.createElement('div');
-                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${activeItemId}.html">${subItem.name}</a></li>`;
-                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${subItem.id}.html">${subItem.name}</a></li>`;
+                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect">${subItem.name}</a></li>`;
+                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${ItemId}.html">${subItem.name}</a></li>`;
                         submenuContainer.appendChild(subItemElement);
                         leftmenuContainer.appendChild(leftSubItemElement);
 
@@ -63,7 +68,7 @@ function fill_menuItems() {
                             const activeSubItems = submenuContainer.getElementsByClassName('custom-nav-link');
                             const activeLeftSubItems = leftmenuContainer.getElementsByClassName('custom-nav-link');
 
-                            while (activeSubItems.length > 0) {
+                            if (activeSubItems.length > 0) {
                                 activeSubItems[0].classList.remove('custom-nav-link');
                                 activeLeftSubItems[0].classList.remove('custom-nav-link');
                             }
@@ -71,6 +76,12 @@ function fill_menuItems() {
                             // Add the 'active' class to the clicked submenu item
                             subItemElement.classList.add('custom-nav-link');
                             leftSubItemElement.classList.add('custom-nav-link');
+
+                           // clearMainContainer(); //clear main container before loading new content
+                            function4_subPage_smartCities(); //default sub page for smart cities
+
+
+
                         });
                     });
 
@@ -85,7 +96,7 @@ function fill_menuItems() {
                 });
 
                 */
-               
+
 
 
 
@@ -137,7 +148,6 @@ function fill_menuItems() {
             });
 
 
-            console.log(menuContainer);
 
         })
         .catch(error => console.error('Error:', error));
@@ -185,7 +195,6 @@ function homePageContent() {
             data.sections.forEach(item => {
                 const cardElement = document.createElement('div');
                 const cardBackgroundColor = item.color; // Set background color
-                console.log(cardBackgroundColor);
                 cardElement.innerHTML = `
 
                 <div id="${item.id}" class="card bg-info text-dark content-card mt-5 zoom-effect custom-card" style="background-color:${cardBackgroundColor} !important">
@@ -226,12 +235,16 @@ function homePageContent() {
 
 
 function function4_subPage_smartCities() {
+
+
+
     fetch('./data/cards-smartCity.json')
         .then(response => response.json())
         .then(data => {
             const cardContainer = document.getElementById('sub-card-container-smartCities');
+            cardContainer.parentElement.innerHTML = `<div id="sub-card-container-smartCities" class="row row-cols-1 row-cols-md-3 g-4 custom-cols">
+                </div>`;
             data.cards.forEach(item => {
-                console.log(item);
                 const cardElement = document.createElement('div');
                 cardElement.innerHTML = `
                     <div class="col">
@@ -255,4 +268,11 @@ function function4_subPage_smartCities() {
 
         })
         .catch(error => console.error('Error:', error));
+}
+
+
+
+function clearMainContainer() {
+    const mainContainer = document.getElementById('main-card-container');
+    mainContainer.innerHTML = '';
 }

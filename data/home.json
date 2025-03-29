@@ -3,7 +3,7 @@
         {
             "id": "smart-cities",
             "link": "smart-cities",
-             "color": "#FF5722",
+            "color": "#FF5722",
             "image": {
                 "src": "./media/photo/smart-city.jpg",
                 "alt": "Smart City Digital Twin",

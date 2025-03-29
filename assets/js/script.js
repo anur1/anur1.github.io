@@ -3,7 +3,7 @@
 window.addEventListener('DOMContentLoaded', function () {
     homePageContent(); //default home page
     fill_menuItems();
-    function4_subPage_smartCities(); //default sub page for smart cities
+ //   function4_subPage_smartCities(); //default sub page for smart cities
 });
 
 // Menu 
@@ -77,9 +77,49 @@ function fill_menuItems() {
                             subItemElement.classList.add('custom-nav-link');
                             leftSubItemElement.classList.add('custom-nav-link');
 
-                           // clearMainContainer(); //clear main container before loading new content
-                            function4_subPage_smartCities(); //default sub page for smart cities
 
+
+
+
+                            // Load the content of the selected sub page
+
+                           // clearMainContainer(); //clear main container before loading new content
+                            const mainContainer = document.getElementById('main-card-container');
+                            mainContainer.innerHTML = '';
+                            //mainContainer.classList.add('row row-cols-1 row-cols-md-3 g-4 custom-cols');
+
+                            //const subcardContainer2 = document.getElementById('sub-card-container-smartCities');
+                            mainContainer.innerHTML = `<div id="sub-card-container-smartCities" class="row row-cols-1 row-cols-md-3 g-4 custom-cols">
+                </div>`;
+                            const subcardContainer2 = document.getElementById('sub-card-container-smartCities');
+                            fetch('./data/cards-smartCity.json')
+                                .then(response => response.json())
+                                .then(data => {
+
+
+                                    
+                                    data.cards.forEach(item => {
+                                        const cardElement = document.createElement('div');
+                                        cardElement.innerHTML = `
+                    <div class="col">
+                        <div class="card h-100" style="background-color: ${item.backgroundColor};">
+                            <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${item.title}</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">${item.subTitle}</h6>
+                                    <p class="card-text">${item.description}</p>
+                                    <a href="${item.buttonLink}" class="btn btn-primary">${item.buttonText}</a>
+                                </div>
+                        </div>
+                    </div >
+         
+
+                    `;//end of cardElement.innerHTML
+
+                                        //add above card element to the main card container
+                                        subcardContainer2.appendChild(cardElement);
+                                    });
+                                });
 
 
                         });
@@ -236,7 +276,25 @@ function homePageContent() {
 
 function function4_subPage_smartCities() {
 
+   
 
+}
+
+
+
+function clearMainContainer() {
+    const mainContainer = document.getElementById('main-card-container');
+    mainContainer.innerHTML = '';
+}
+
+
+
+
+
+/*
+
+
+function function4_subPage_smartCities() {
 
     fetch('./data/cards-smartCity.json')
         .then(response => response.json())
@@ -270,9 +328,4 @@ function function4_subPage_smartCities() {
         .catch(error => console.error('Error:', error));
 }
 
-
-
-function clearMainContainer() {
-    const mainContainer = document.getElementById('main-card-container');
-    mainContainer.innerHTML = '';
-}
+*/

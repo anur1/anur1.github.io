@@ -3,12 +3,11 @@
 window.addEventListener('DOMContentLoaded', function () {
     homePageContent(); //default home page
     fill_menuItems();
- //   function4_subPage_smartCities(); //default sub page for smart cities
+    //   function4_subPage_smartCities(); //default sub page for smart cities
 });
 
 // Menu 
 
-let selectedItemId = "smart-citites"; 
 function fill_menuItems() {
     fetch('./data/menu.json')
         .then(response => response.json())
@@ -19,7 +18,6 @@ function fill_menuItems() {
             const leftmenuContainer = document.getElementById('leftmenu-container');
 
 
-            
 
             // Add main menu items to navigation menu
             data.menu.forEach(item => {
@@ -32,10 +30,15 @@ function fill_menuItems() {
 
 
 
-                
+
                 // Add sub menu items to sub navigation menu when main item is clicked
                 itemElement.addEventListener('click', () => {
                     //event.preventDefault(); // Prevent the default link behavior
+
+                    let selectedItem = itemElement.querySelector('li').querySelector('a').getAttribute('href');
+                    console.log('clicked item1:', selectedItem);
+                    if (selectedItem == "#smart-cities") { console.log("clicked to smart-cities"); }
+
 
                     // Remove the 'active' class from all menu items before new styling of clicked item
                     const activeItems = menuContainer.getElementsByClassName('custom-nav-link');
@@ -64,6 +67,9 @@ function fill_menuItems() {
                         subItemElement.addEventListener('click', () => {
                             //event.preventDefault(); // Prevent the default link behavior
 
+
+
+
                             // Remove the 'active' class from all submenu items before new styling of clicked item
                             const activeSubItems = submenuContainer.getElementsByClassName('custom-nav-link');
                             const activeLeftSubItems = leftmenuContainer.getElementsByClassName('custom-nav-link');
@@ -83,21 +89,45 @@ function fill_menuItems() {
 
                             // Load the content of the selected sub page
 
-                           // clearMainContainer(); //clear main container before loading new content
+                            // clearMainContainer(); //clear main container before loading new content
                             const mainContainer = document.getElementById('main-card-container');
                             mainContainer.innerHTML = '';
                             //mainContainer.classList.add('row row-cols-1 row-cols-md-3 g-4 custom-cols');
 
                             //const subcardContainer2 = document.getElementById('sub-card-container-smartCities');
-                            mainContainer.innerHTML = `<div id="sub-card-container-smartCities" class="row row-cols-1 row-cols-md-3 g-4 custom-cols">
-                </div>`;
-                            const subcardContainer2 = document.getElementById('sub-card-container-smartCities');
-                            fetch('./data/cards-smartCity.json')
+                            // mainContainer.innerHTML = `<div id="sub-card-container-smartCities" class="row row-cols-1 row-cols-md-3 g-4 custom-cols"></div>`;
+
+
+                            //select the appropriate sub card container in HTML file based on the selected item
+                            const appropriateCardForSelectedItem = `sub-card-container-${selectedItem.substring(1)}`;
+                            
+
+                            //remove contents of the card containers from the previous selection
+                            document.getElementById('sub-card-container-smart-cities').innerHTML = '';
+                            document.getElementById('sub-card-container-environmental').innerHTML = '';
+                            document.getElementById('sub-card-container-power-grids').innerHTML = '';
+                            document.getElementById('sub-card-container-others').innerHTML = '';
+
+
+                            subcardContainer = document.getElementById(appropriateCardForSelectedItem);
+                            console.log('subcardContainer:', subcardContainer);
+
+
+
+                            
+
+
+                            const appropriateJsonFileForSelectedItem = `cards-${selectedItem.substring(1)}`;
+
+                            //fill the selected card container with the appropriate data from JSON file
+                            //fetch the data from JSON file based on the selected item
+                            fetch(`./data/${appropriateJsonFileForSelectedItem}.json`)
                                 .then(response => response.json())
                                 .then(data => {
 
+                                    subcardContainer.innerHTML = '';
 
-                                    
+
                                     data.cards.forEach(item => {
                                         const cardElement = document.createElement('div');
                                         cardElement.innerHTML = `
@@ -117,72 +147,16 @@ function fill_menuItems() {
                     `;//end of cardElement.innerHTML
 
                                         //add above card element to the main card container
-                                        subcardContainer2.appendChild(cardElement);
+                                        subcardContainer.appendChild(cardElement);
                                     });
                                 });
 
 
                         });
+
                     });
 
                 })
-
-                /*
- 
-
-                  
-
-
-                });
-
-                */
-
-
-
-
-
-                /*
-                
-                                // Add sub menu items to left navigation menu
-                                itemElement.addEventListener('click', () => {
-                                    event.preventDefault(); // Prevent the default link behavior
-                
-                                    submenuContainer.innerHTML = '';
-                                    leftmenuContainer.innerHTML = '';
-                
-                                    // Add sub menu items to sub navigation menu from menu.json file/menu/submenu/name
-                                    item.submenu.forEach(subItem => {
-                                        const subItemElement = document.createElement('div');
-                                        const leftSubItemElement = document.createElement('div');
-                
-                                        subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="#${subItem.id}">${subItem.name}</a></li>`;
-                                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${subItem.id}.html">${subItem.name}</a></li>`;
-                
-                                        submenuContainer.appendChild(subItemElement);
-                                        leftmenuContainer.appendChild(leftSubItemElement);
-                
-                                        // Add event listener to sub menu items
-                                        subItemElement.addEventListener('click', () => {
-                                            event.preventDefault(); // Prevent the default link behavior
-                
-                                            // Remove the 'active' class from all submenu items before new styling of clicked item
-                                            const activeSubItems = submenuContainer.getElementsByClassName('custom-nav-link');
-                                            const activeLeftSubItems = leftmenuContainer.getElementsByClassName('custom-nav-link');
-                                            
-                                            while (activeSubItems.length > 0) {
-                                                activeSubItems[0].classList.remove('custom-nav-link');
-                                                activeLeftSubItems[0].classList.remove('custom-nav-link');
-                                            }
-                
-                                            // Add the 'active' class to the clicked submenu item
-                                            subItemElement.classList.add('custom-nav-link');
-                                            leftSubItemElement.classList.add('custom-nav-link');
-                                        });
-                
-                                    });
-                                });
-                 */
-
 
 
             });
@@ -276,7 +250,7 @@ function homePageContent() {
 
 function function4_subPage_smartCities() {
 
-   
+
 
 }
 

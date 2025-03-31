@@ -1,0 +1,164 @@
+{
+  "cards": [
+    {
+      "id": 13,
+      "title": "Card 13 power grids",
+      "subTitle": "SubTitle for Card 13",
+      "description": "This is a description for Card 13. It highlights the main features and applications of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#F0FFF0",
+      "buttonText": "Analyze",
+      "buttonLink": "https://example.com/analyze"
+    },
+    {
+      "id": 14,
+      "title": "Card 14",
+      "subTitle": "SubTitle for Card 14",
+      "description": "This is a description for Card 14. It outlines the key concepts and potential impact of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFE4E1",
+      "buttonText": "Explore",
+      "buttonLink": "https://example.com/explore"
+    },
+    {
+      "id": 15,
+      "title": "Card 15",
+      "subTitle": "SubTitle for Card 15",
+      "description": "This is a description for Card 15. It provides an overview of the main aspects and significance of this card's content.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#E0FFFF",
+      "buttonText": "Discover",
+      "buttonLink": "https://example.com/discover"
+    },
+    {
+      "id": 16,
+      "title": "Card 16",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFF0F5",
+      "buttonText": "Investigate",
+      "buttonLink": "https://example.com/investigate"
+    },
+    {
+      "id": 17,
+      "title": "Card 17",
+      "subTitle": "SubTitle for Card 17",
+      "description": "This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#F0F8FF",
+      "buttonText": "Examine",
+      "buttonLink": "https://example.com/examine"
+    },
+    {
+      "id": 18,
+      "title": "Card 18",
+      "subTitle": "SubTitle for Card 18",
+      "description": "This is a description for Card 18. It introduces the primary concepts and implications of this card's content.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFFACD",
+      "buttonText": "Study",
+      "buttonLink": "https://example.com/study"
+    },
+    {
+      "id": 19,
+      "title": "Card 19",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#E6E6FA",
+      "buttonText": "Review",
+      "buttonLink": "https://example.com/review"
+    },
+    {
+      "id": 20,
+      "title": "Card 20",
+      "subTitle": "SubTitle for Card 20",
+      "description": "This is a description for Card 20. It outlines the main features and significance of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFF5EE",
+      "buttonText": "Evaluate",
+      "buttonLink": "https://example.com/evaluate"
+    },
+    {
+      "id": 13,
+      "title": "Card 13",
+      "subTitle": "SubTitle for Card 13",
+      "description": "This is a description for Card 13. It highlights the main features and applications of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#F0FFF0",
+      "buttonText": "Analyze",
+      "buttonLink": "https://example.com/analyze"
+    },
+    {
+      "id": 14,
+      "title": "Card 14",
+      "subTitle": "SubTitle for Card 14",
+      "description": "This is a description for Card 14. It outlines the key concepts and potential impact of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFE4E1",
+      "buttonText": "Explore",
+      "buttonLink": "https://example.com/explore"
+    },
+    {
+      "id": 15,
+      "title": "Card 15",
+      "subTitle": "SubTitle for Card 15",
+      "description": "This is a description for Card 15. It provides an overview of the main aspects and significance of this card's content.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#E0FFFF",
+      "buttonText": "Discover",
+      "buttonLink": "https://example.com/discover"
+    },
+    {
+      "id": 16,
+      "title": "Card 16",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFF0F5",
+      "buttonText": "Investigate",
+      "buttonLink": "https://example.com/investigate"
+    },
+    {
+      "id": 17,
+      "title": "Card 17",
+      "subTitle": "SubTitle for Card 17",
+      "description": "This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#F0F8FF",
+      "buttonText": "Examine",
+      "buttonLink": "https://example.com/examine"
+    },
+    {
+      "id": 18,
+      "title": "Card 18",
+      "subTitle": "SubTitle for Card 18",
+      "description": "This is a description for Card 18. It introduces the primary concepts and implications of this card's content.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFFACD",
+      "buttonText": "Study",
+      "buttonLink": "https://example.com/study"
+    },
+    {
+      "id": 19,
+      "title": "Card 19",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#E6E6FA",
+      "buttonText": "Review",
+      "buttonLink": "https://example.com/review"
+    },
+    {
+      "id": 20,
+      "title": "Card 20",
+      "subTitle": "SubTitle for Card 20",
+      "description": "This is a description for Card 20. It outlines the main features and significance of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
+      "backgroundColor": "#FFF5EE",
+      "buttonText": "Evaluate",
+      "buttonLink": "https://example.com/evaluate"
+    }
+  ]
+}

@@ -62,8 +62,8 @@
 
 
       {
-        "id": "other-dt",
-        "name": "Other-DTs",
+        "id": "others",
+        "name": "Others",
         "description": "Other DT solutions and technologies.",
         "color": "#FFC107",
         "isSubmenu": true,

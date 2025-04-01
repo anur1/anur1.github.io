@@ -9,12 +9,12 @@
         "submenu": [
           {
             "id": 2.1,
-            "name": "Smart Lighting",
+            "name": "Large Scale Twins",
             "description": "Energy-efficient street lighting solutions."
           },
           {
             "id": 2.2,
-            "name": "Traffic Management",
+            "name": "Geo Portals",
             "description": "Real-time traffic monitoring and optimization."
           }
         ]

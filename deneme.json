@@ -3,530 +3,487 @@
     {
       "id": 13,
       "title": "City of Alkmaar, Netherlands",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "Various themes such as mobility, climate and social facilities.",
+      "description": "In the Digital Twin, you will eventually be able to view, experience and think about part of the regional plans interactively and in real time.",
       "image": "./media/photo/Alkmaar-NL.png",
       "backgroundColor": "#F0FFF0",
       "buttonText": "Analyze",
       "buttonLink": "https://dtp-alkmaar.azurewebsites.net/twin",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 14,
       "title": "Rotterdam, Netherlands",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "Virtual City Systems",
+      "description": "This is 2D and 3D twin application for Rotterdam.",
       "image": "./media/photo/Rotterdam-NL.png",
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://www.3drotterdam.nl/#/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 15,
       "title": "New Zealand",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "Beach condition tracking",
+      "description": "A safe swim twin for New Zealand.",
       "image": "./media/photo/NZBeach.png",
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://safeswim.org.nz/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 16,
       "title": "Seoul, South Korea",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 16",
+      "description": "See here for Seoul-DT details: https://english.seoul.go.kr/policy/smart-city/spatial-data/  This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
       "image": "./media/photo/Seoul.png",
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://smap.seoul.go.kr/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 17,
       "title": "Des Moines, Iowa, USA",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 17",
+      "description": " This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://example.com/examine",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 18,
       "title": "Virtual Town - InfiniTown",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 18",
+      "description": "This is a description for Card 18. It introduces the primary concepts and implications of this card's content.",
       "image": "./media/photo/Infinitown.png",
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://demos.littleworkshop.fr/infinitown",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 19,
       "title": "SiemensStadt, Germany",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
       "image": "./media/photo/SiemensStadt.png",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://eu.opencitiesplanner.bentley.com/siemensstadt/s2startpage-public",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 20,
       "title": "L\u00c3\u00b6rrach, Germany",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 20",
+      "description": "This is a description for Card 20. It outlines the main features and significance of this card's subject.",
       "image": "./media/photo/Lorrach.png",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://loerrach.virtualcitymap.de/#/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 13,
       "title": "Kassel, Germany",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 13",
+      "description": "This is a description for Card 13. It highlights the main features and applications of this card's topic.",
       "image": "./media/photo/Kassel.png",
       "backgroundColor": "#F0FFF0",
       "buttonText": "Analyze",
       "buttonLink": "https://kassel.virtualcitymap.de/#/legend",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 14,
       "title": "EU Cities",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 14",
+      "description": "This is a description for Card 14. It outlines the key concepts and potential impact of this card's subject.",
       "image": "./media/photo/EU.png",
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://citytwin.eu/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 15,
       "title": "NSW, Australia",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 15",
+      "description": "This is a description for Card 15. It provides an overview of the main aspects and significance of this card's content.",
       "image": "./media/photo/NSW.png",
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://nsw.digitaltwin.terria.io/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 16,
       "title": "Sydney, Australia",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
       "image": "./media/photo/Sydney.png",
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://lcdt-project.unsw.edu.au/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 17,
       "title": "Helsinki, Finland",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 17",
+      "description": "This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
       "image": "./media/photo/Helsinki.png",
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://kartta.hel.fi/3d/mesh/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 18,
       "title": "HKust, Hong Kong",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 18",
+      "description": "This is a description for Card 18. It introduces the primary concepts and implications of this card's content.",
       "image": "./media/photo/Hkutsk.png",
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://digitaltwin.hkust.edu.hk/dt_webapp_integrated/?page=3D-GIS-Map",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 19,
       "title": "Barcelona, Spain",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
       "image": "./media/photo/Barcelona.png",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://geoportal.barcelona.cat/planolBCN/en/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 20,
       "title": "EU Cities",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 20",
+      "description": "This is a description for Card 20. It outlines the main features and significance of this card's subject.",
       "image": "./media/photo/EsponEU.png",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://gis-portal.espon.eu/arcgis/apps/experiencebuilder/experience/?id=e561b285ad2147fc8e5318015d49f422",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 14,
       "title": "Istanbul, Turkey",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 14",
+      "description": "This is a description for Card 14. It outlines the key concepts and potential impact of this card's subject.",
       "image": "./media/photo/Istanbul.png",
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://sehirharitasiapi.ibb.gov.tr/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 15,
       "title": "Ankara, Turkey",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 15",
+      "description": "This is a description for Card 15. It provides an overview of the main aspects and significance of this card's content.",
       "image": "./media/photo/Ankara.png",
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://kentrehberi.ankara.bel.tr/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 16,
       "title": "Konya, Turkey",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
       "image": "./media/photo/Konya.png",
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://www.360konya.com/",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 17,
       "title": "Kayseri, Turkey",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 17",
+      "description": "This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
       "image": "./media/photo/Kayseri.png",
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://cbs.kayseri.bel.tr/kayseri-kent-rehberi",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 18,
       "title": "Geoportal2, France",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/France2.png",
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://www.geoportail-urbanisme.gouv.fr/map/#tile=1&lon=2.424722&lat=46.76305599999998&zoom=6",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 19,
       "title": "Geoportal1, France",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/France1.png",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://www.geoportail.gouv.fr/donnees/inpg",
-      "tags": "smartcities",
-      "subtitle": ""
+      "tags": "smartcities"
     },
     {
       "id": 20,
       "title": "DT Labs",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "Digital Twin Laboratories",
+      "description": "See Digital Twin Labs",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://example.com/evaluate",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 16,
       "title": "Chalmers University, Sweden",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
       "image": "./media/photo/Chalmers.png",
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://dtcc.chalmers.se/virtual-gothenburg-the-citys-digital-twin/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 17,
       "title": "Gothenburg University, Sweden",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/Gothenburg.png",
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://visualarena.lindholmen.se/en/project/virtual-gothenburg-lab",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 18,
       "title": "HKustk, Hong Kong",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/HkuskLab.png",
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://digitaltwin.hkust.edu.hk/index.html",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 19,
       "title": "University of Twente, Netherlands",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
       "image": "./media/photo/Twente.png",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://www.utwente.nl/en/digital-society/research/digitalisation/digital-twin-geohub/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 20,
       "title": "Sandia University, USA",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/SandiaLab.png",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://www.sandia.gov/digital-engineering/digital-twin/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 13,
       "title": "TAMU lab, USA",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/TAMULab.png",
       "backgroundColor": "#F0FFF0",
       "buttonText": "Analyze",
       "buttonLink": "https://dtl.tamids.tamu.edu/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 14,
       "title": "TUE, Netherlands",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/TAMULab.png",
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://dtl.tamids.tamu.edu/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 15,
       "title": "Turing Research Lab",
       "subTitle": "",
-      "description": "   ",
+      "description": "",
       "image": "./media/photo/TuringLab.png",
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://www.turing.ac.uk/research/research-projects/tric-dt",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 16,
       "title": "DT Institute",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
       "image": "./media/photo/LISTLab.png",
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://www.list.lu/en/institute/centres/digital-twin-innovation-centre/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 17,
       "title": "Joanneum Research",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 17",
+      "description": "This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
       "image": "./media/photo/JoanneumLab.png",
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://www.joanneum.at/digital/en/research-groups/digital-twin-lab/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 18,
       "title": "NTNU DT Lab, Norway",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 18",
+      "description": "This is a description for Card 18. It introduces the primary concepts and implications of this card's content.",
       "image": "./media/photo/NTNULab.png",
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://www.ntnu.edu/iba/studies/utforsk",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 19,
       "title": "Purdue DT Lab, USA",
-      "subTitle": "",
-      "description": "   ",
-      "image": "./media/photo/PurdueLab.png",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
+      "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://purduedigitaltwin.github.io/",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 20,
-      "title": "HydroInformatics Lab, USA",
-      "subTitle": "",
-      "description": "   ",
-      "image": "./media/photo/HydroInformaticsLab.png",
+      "title": "Purdue DT Lab",
+      "subTitle": "SubTitle for Card 20",
+      "description": "This is a description for Card 20. It outlines the main features and significance of this card's subject.",
+      "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://example.com/evaluate",
-      "tags": "labs",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 13,
       "title": "Card 13",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 13",
+      "description": "This is a description for Card 13. It highlights the main features and applications of this card's topic.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#F0FFF0",
       "buttonText": "Analyze",
       "buttonLink": "https://example.com/analyze",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 14,
       "title": "Card 14",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 14",
+      "description": "This is a description for Card 14. It outlines the key concepts and potential impact of this card's subject.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://example.com/explore",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 15,
       "title": "Card 15",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 15",
+      "description": "This is a description for Card 15. It provides an overview of the main aspects and significance of this card's content.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://example.com/discover",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 16,
       "title": "Card 16",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 16",
+      "description": "This is a description for Card 16. It elaborates on the unique features and importance of this card's topic.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://example.com/investigate",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 17,
       "title": "Card 17",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 17",
+      "description": "This is a description for Card 17. It summarizes the core elements and relevance of this card's subject.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://example.com/examine",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 18,
       "title": "Card 18",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 18",
+      "description": "This is a description for Card 18. It introduces the primary concepts and implications of this card's content.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://example.com/study",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 19,
       "title": "Card 19",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 19",
+      "description": "This is a description for Card 19. It presents the key aspects and potential applications of this card's topic.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://example.com/review",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     },
     {
       "id": 20,
       "title": "Card 20",
-      "subTitle": "",
-      "description": "   ",
+      "subTitle": "SubTitle for Card 20",
+      "description": "This is a description for Card 20. It outlines the main features and significance of this card's subject.",
       "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://example.com/evaluate",
-      "tags": "",
-      "subtitle": ""
+      "tags": "universitylab"
     }
-  ]
+  ],
+  "description": "aaaaaaaaaaaa "
 }

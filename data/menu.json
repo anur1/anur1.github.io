@@ -2,39 +2,49 @@
   "menu": [
       {
         "id": "smart-cities",
-        "name": "Smart-cities",
-        "description": "Smart city infrastructure and services.",
+        "name": "Smart Cities",
+        "description": "",
         "color": "#2196F3",
         "isSubmenu": true,
         "submenu": [
           {
             "id": 2.1,
-            "name": "Large Scale Twins",
-            "description": "Energy-efficient street lighting solutions."
+            "name": "Smart Cities",
+            "description": ""
           },
           {
             "id": 2.2,
-            "name": "Geo Portals",
-            "description": "Real-time traffic monitoring and optimization."
+            "name": "Labs",
+            "description": ""
           }
         ]
       },
     {
       "id": "environmental",
       "name": "Environmental",
-      "description": "Environmental solutions and initiatives.",
+      "description": "",
       "color": "#4CAF50",
       "isSubmenu": true,
       "submenu": [
         {
           "id": 1.1,
-          "name": "Air Quality Monitoring",
-          "description": "Real-time monitoring of air pollutants."
+          "name": "Flood",
+          "description": ""
         },
         {
           "id": 1.2,
-          "name": "Water Conservation",
-          "description": "Efficient water management systems."
+          "name": "Hurricane",
+          "description": ""
+        },
+        {
+          "id": 1.3,
+          "name": "Drought",
+          "description": ""
+        },
+        {
+          "id": 1.4,
+          "name": "Labs",
+          "description": ""
         }
       ]
     },

@@ -273,7 +273,7 @@
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://example.com/evaluate",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -285,7 +285,7 @@
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://dtcc.chalmers.se/virtual-gothenburg-the-citys-digital-twin/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -297,7 +297,7 @@
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://visualarena.lindholmen.se/en/project/virtual-gothenburg-lab",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -309,7 +309,7 @@
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://digitaltwin.hkust.edu.hk/index.html",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -321,7 +321,7 @@
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://www.utwente.nl/en/digital-society/research/digitalisation/digital-twin-geohub/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -333,7 +333,7 @@
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://www.sandia.gov/digital-engineering/digital-twin/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -345,7 +345,7 @@
       "backgroundColor": "#F0FFF0",
       "buttonText": "Analyze",
       "buttonLink": "https://dtl.tamids.tamu.edu/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -357,7 +357,7 @@
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://dtl.tamids.tamu.edu/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -369,7 +369,7 @@
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://www.turing.ac.uk/research/research-projects/tric-dt",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -381,7 +381,7 @@
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://www.list.lu/en/institute/centres/digital-twin-innovation-centre/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -393,7 +393,7 @@
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://www.joanneum.at/digital/en/research-groups/digital-twin-lab/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -405,7 +405,7 @@
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://www.ntnu.edu/iba/studies/utforsk",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -413,23 +413,23 @@
       "title": "Purdue DT Lab, USA",
       "subTitle": "",
       "description": "   ",
-      "image": "./media/photo/PurdueLab.png",
+      "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://purduedigitaltwin.github.io/",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
       "id": 20,
-      "title": "HydroInformatics Lab, USA",
+      "title": "Purdue DT Lab",
       "subTitle": "",
       "description": "   ",
-      "image": "./media/photo/HydroInformaticsLab.png",
+      "image": "./media/photo/smart-city.jpg",
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://example.com/evaluate",
-      "tags": "labs",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -441,7 +441,7 @@
       "backgroundColor": "#F0FFF0",
       "buttonText": "Analyze",
       "buttonLink": "https://example.com/analyze",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -453,7 +453,7 @@
       "backgroundColor": "#FFE4E1",
       "buttonText": "Explore",
       "buttonLink": "https://example.com/explore",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -465,7 +465,7 @@
       "backgroundColor": "#E0FFFF",
       "buttonText": "Discover",
       "buttonLink": "https://example.com/discover",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -477,7 +477,7 @@
       "backgroundColor": "#FFF0F5",
       "buttonText": "Investigate",
       "buttonLink": "https://example.com/investigate",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -489,7 +489,7 @@
       "backgroundColor": "#F0F8FF",
       "buttonText": "Examine",
       "buttonLink": "https://example.com/examine",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -501,7 +501,7 @@
       "backgroundColor": "#FFFACD",
       "buttonText": "Study",
       "buttonLink": "https://example.com/study",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -513,7 +513,7 @@
       "backgroundColor": "#E6E6FA",
       "buttonText": "Review",
       "buttonLink": "https://example.com/review",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     },
     {
@@ -525,7 +525,7 @@
       "backgroundColor": "#FFF5EE",
       "buttonText": "Evaluate",
       "buttonLink": "https://example.com/evaluate",
-      "tags": "",
+      "tags": "universitylab",
       "subtitle": ""
     }
   ]

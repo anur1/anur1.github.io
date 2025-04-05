@@ -53,6 +53,7 @@ function fill_menuItems() {
                     leftmenuContainer.innerHTML = '';
 
 
+                    const subItemNames = [];
                     // Add sub menu items to sub navigation menu from menu.json file/menu/submenu/name
                     item.submenu.forEach(subItem => {
                         const subItemElement = document.createElement('div');
@@ -62,12 +63,19 @@ function fill_menuItems() {
                         submenuContainer.appendChild(subItemElement);
                         leftmenuContainer.appendChild(leftSubItemElement);
 
+                        //sub menu item names are printed 
+                        console.log('subItem', subItem.name);
+                        //remove spaces to get tags
+                        const tags = subItem.name.toLowerCase().replace(/\s+/g, '');
+                        console.log('tags:', tags);
+
 
                         // Add event listener to sub menu items
                         subItemElement.addEventListener('click', () => {
                             //event.preventDefault(); // Prevent the default link behavior
 
-
+                            //clicked sub menu item name is printed
+                            console.log('subItem', subItem.name);
 
 
                             // Remove the 'active' class from all submenu items before new styling of clicked item
@@ -100,7 +108,8 @@ function fill_menuItems() {
 
                             //select the appropriate sub card container in HTML file based on the selected item
                             const appropriateCardForSelectedItem = `sub-card-container-${selectedItem.substring(1)}`;
-                            
+                            console.log('appropriateCardForSelectedItem:', appropriateCardForSelectedItem);
+
 
                             //remove contents of the card containers from the previous selection
                             document.getElementById('sub-card-container-smart-cities').innerHTML = '';
@@ -114,13 +123,14 @@ function fill_menuItems() {
 
 
 
-                            
+
 
 
                             const appropriateJsonFileForSelectedItem = `cards-${selectedItem.substring(1)}`;
-
+                            console.log('appropriateJsonFileForSelectedItem:', appropriateJsonFileForSelectedItem);
                             //fill the selected card container with the appropriate data from JSON file
                             //fetch the data from JSON file based on the selected item
+
                             fetch(`./data/${appropriateJsonFileForSelectedItem}.json`)
                                 .then(response => response.json())
                                 .then(data => {
@@ -129,26 +139,42 @@ function fill_menuItems() {
 
 
                                     data.cards.forEach(item => {
-                                        const cardElement = document.createElement('div');
-                                        cardElement.innerHTML = `
-                    <div class="col">
-                        <div class="card h-100" style="background-color: ${item.backgroundColor};">
-                            <img src="${item.image}" class="card-img-top" alt="${item.title}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${item.title}</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">${item.subTitle}</h6>
-                                    <p class="card-text">${item.description}</p>
-                                    <a href="${item.buttonLink}" class="btn btn-primary">${item.buttonText}</a>
-                                </div>
-                        </div>
-                    </div >
-         
 
-                    `;//end of cardElement.innerHTML
+                                        //check tag names
 
-                                        //add above card element to the main card container
-                                        subcardContainer.appendChild(cardElement);
+                                        //print the cards on screen according to the selected sub menu item
+                                        //subment item name is equal to the tags of the card
+
+                                        if (tags == `${item.tags}`) {
+                                            console.log(`${item.tags}`);
+
+                                            //add card element
+                                            const cardElement = document.createElement('div');
+                                            cardElement.innerHTML = `
+                                                <div class="col">
+                                                    <div class="card h-100" style="background-color: ${item.backgroundColor};">
+                                                        <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">${item.title}</h5>
+                                                                <h6 class="card-subtitle mb-2 text-muted">${item.subTitle}</h6>
+                                                                <p class="card-text">${item.description}</p>
+                                                                <a href="${item.buttonLink}" class="btn btn-primary">${item.buttonText}</a>
+                                                            </div>
+                                                    </div>
+                                                </div > `;//end of cardElement.innerHTML
+
+                                            //add above card element to the main card container
+                                            subcardContainer.appendChild(cardElement);
+
+
+                                        }
+
+
+
                                     });
+
+
+
                                 });
 
 

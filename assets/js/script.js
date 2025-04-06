@@ -59,7 +59,7 @@ function fill_menuItems() {
                         const subItemElement = document.createElement('div');
                         const leftSubItemElement = document.createElement('div');
                         subItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect">${subItem.name}</a></li>`;
-                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect" href="${ItemId}.html">${subItem.name}</a></li>`;
+                        leftSubItemElement.innerHTML = `<li class="nav-item"> <a class="nav-link zoom-effect">${subItem.name}</a></li>`;
                         submenuContainer.appendChild(subItemElement);
                         leftmenuContainer.appendChild(leftSubItemElement);
 
@@ -68,6 +68,12 @@ function fill_menuItems() {
                         //remove spaces to get tags
                         const tags = subItem.name.toLowerCase().replace(/\s+/g, '');
                         console.log('tags:', tags);
+
+
+
+
+
+
 
 
                         // Add event listener to sub menu items
@@ -179,6 +185,18 @@ function fill_menuItems() {
 
 
                         });
+
+
+                        // Add event listener to left sub menu items
+                        // Just go and click the sub menu item
+                        // this action will be do the same thing as before
+                        leftSubItemElement.addEventListener('click', () => {
+                            subItemElement.click();
+                         })
+
+
+
+
 
                     });
 

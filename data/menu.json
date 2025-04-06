@@ -1,24 +1,29 @@
 {
   "menu": [
-      {
-        "id": "smart-cities",
-        "name": "Smart Cities",
-        "description": "",
-        "color": "#2196F3",
-        "isSubmenu": true,
-        "submenu": [
-          {
-            "id": 2.1,
-            "name": "Smart Cities",
-            "description": ""
-          },
-          {
-            "id": 2.2,
-            "name": "Labs",
-            "description": ""
-          }
-        ]
-      },
+    {
+      "id": "smart-cities",
+      "name": "Smart Cities",
+      "description": "",
+      "color": "#2196F3",
+      "isSubmenu": true,
+      "submenu": [
+        {
+          "id": 2.1,
+          "name": "Smart Cities",
+          "description": ""
+        },
+        {
+          "id": 2.2,
+          "name": "Labs",
+          "description": ""
+        },
+        {
+          "id": 2.3,
+          "name": "Projects",
+          "description": ""
+        }
+      ]
+    },
     {
       "id": "environmental",
       "name": "Environmental",
@@ -48,8 +53,6 @@
         }
       ]
     },
-  
- 
     {
       "id": "power-grids",
       "name": "Power Grids",
@@ -69,31 +72,24 @@
         }
       ]
     },
-
-
-      {
-        "id": "others",
-        "name": "Others",
-        "description": "Other DT solutions and technologies.",
-        "color": "#FFC107",
-        "isSubmenu": true,
-        "submenu": [
-          {
-            "id": 3.1,
-            "name": "Manufacturing",
-            "description": "Industrial automation and robotics."
-          },
-          {
-            "id": 3.2,
-            "name": "Healthcare",
-            "description": "Advanced quality control and inspection systems."
-          }
-        ]
-      }
-
-
-
-
-
+    {
+      "id": "others",
+      "name": "Others",
+      "description": "Other DT solutions and technologies.",
+      "color": "#FFC107",
+      "isSubmenu": true,
+      "submenu": [
+        {
+          "id": 3.1,
+          "name": "Manufacturing",
+          "description": "Industrial automation and robotics."
+        },
+        {
+          "id": 3.2,
+          "name": "Healthcare",
+          "description": "Advanced quality control and inspection systems."
+        }
+      ]
+    }
   ]
 }

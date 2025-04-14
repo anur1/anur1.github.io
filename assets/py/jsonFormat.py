@@ -10,6 +10,14 @@ for card in data['cards']:
     print(card['description'])
     card['description'] = '   '
     card['subTitle'] = ""
+    card['image'] = "./media/photo/environmental/"
+    card["buttonText"] = "Go"
+    card["buttonLink"] = ""
+    card["tags"] = ""
+    card["title"] = ""
+
+
+
 
 # Save the updated JSON file
 with open(path, 'w') as file:

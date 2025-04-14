@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Card</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for the page */
+        }
+
+        .form-label {
+            font-size: 1.25rem; /* Larger font size for labels */
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: #e9ecef; /* Light gray background for the form */
+        }
+
+        .bg-red {
+            background-color: #FF5733 !important;
+        }
+
+        .bg-green {
+            background-color: #33FF57 !important;
+        }
+
+        .bg-blue {
+            background-color: #3357FF !important;
+        }
+
+        .bg-yellow {
+            background-color: #F1C40F !important;
+        }
+
+        .bg-purple {
+            background-color: #9B59B6 !important;
+        }
+    </style>
+    <script>
+        let jsonData = { "cards": [] }; // Placeholder for JSON data
+
+        // Function to load JSON data from the file
+        async function loadJSON() {
+            try {
+                const response = await fetch('test.json');
+                jsonData = await response.json();
+                displayCards();
+            } catch (error) {
+                console.error('Error loading JSON:', error);
+            }
+        }
+
+        // Function to add a new card
+        function addCard(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get input values
+            const id = document.getElementById('card-id').value;
+            const title = document.getElementById('card-title').value;
+            const subTitle = document.getElementById('card-subtitle').value;
+            const description = document.getElementById('card-description').value;
+            const image = document.getElementById('card-image').value;
+            const backgroundColor = document.getElementById('card-backgroundColor').value;
+            const buttonText = document.getElementById('card-buttonText').value;
+            const buttonLink = document.getElementById('card-buttonLink').value;
+            const tags = document.getElementById('card-tags').value;
+
+            // Add the new card to the JSON structure
+            jsonData.cards.push({
+                id: parseInt(id),
+                title: title,
+                subTitle: subTitle,
+                description: description,
+                image: image,
+                backgroundColor: backgroundColor,
+                buttonText: buttonText,
+                buttonLink: buttonLink,
+                tags: tags
+            });
+
+            // Display the updated JSON data
+            displayCards();
+
+            // Clear the form
+            document.getElementById('card-form').reset();
+
+            // Save the updated JSON data (requires a backend to persist changes)
+            saveJSON();
+        }
+
+        // Function to display cards on the page
+        function displayCards() {
+            const cardsContainer = document.getElementById('cards-container');
+            cardsContainer.innerHTML = ''; // Clear existing content
+
+            jsonData.cards.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.classList.add('card', 'mb-3', 'p-3', 'shadow-sm');
+                cardElement.style.backgroundColor = card.backgroundColor; // Set card background color dynamically
+                cardElement.innerHTML = `
+                    <p><strong>ID:</strong> ${card.id}</p>
+                    <p><strong>Title:</strong> ${card.title}</p>
+                    <p><strong>SubTitle:</strong> ${card.subTitle}</p>
+                    <p><strong>Description:</strong> ${card.description}</p>
+                    <p><strong>Image:</strong> <img src="${card.image}" alt="${card.title}" class="img-fluid" style="max-width: 100px;"></p>
+                    <p><strong>Background Color:</strong> <span style="background-color: ${card.backgroundColor}; padding: 5px;">${card.backgroundColor}</span></p>
+                    <p><strong>Button:</strong> <a href="${card.buttonLink}" class="btn btn-primary">${card.buttonText}</a></p>
+                    <p><strong>Tags:</strong> ${card.tags}</p>
+                `;
+                cardsContainer.appendChild(cardElement);
+            });
+        }
+
+        // Function to save JSON data
+        async function saveJSON() {
+            try {
+                const response = await fetch('/save-json', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                if (response.ok) {
+                    console.log('JSON data saved successfully.');
+                } else {
+                    console.error('Error saving JSON:', await response.text());
+                }
+            } catch (error) {
+                console.error('Error saving JSON:', error);
+            }
+        }
+
+        // Load JSON data on page load
+        window.onload = loadJSON;
+    </script>
+</head>
+
+<body class="bg-warning">
+    <div class="container mt-5 bg-red">
+        <h1 class="text-center mb-4">Add a New Card</h1>
+        <form id="card-form" class="card p-4 shadow-sm bg-green" onsubmit="addCard(event)">
+            <div class="mb-3">
+                <label for="card-id" class="form-label">Card ID:</label>
+                <input type="number" id="card-id" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-title" class="form-label">Card Title:</label>
+                <input type="text" id="card-title" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-subtitle" class="form-label">Card SubTitle:</label>
+                <input type="text" id="card-subtitle" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="card-description" class="form-label">Card Description:</label>
+                <textarea id="card-description" class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-image" class="form-label">Card Image URL:</label>
+                <input type="text" id="card-image" class="form-control" value="./media/photo/" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-backgroundColor" class="form-label">Card Background Color:</label>
+                <select id="card-backgroundColor" class="form-select" required>
+                    <option value="#FF5733" class="bg-red text-white">Red</option>
+                    <option value="#33FF57" class="bg-green text-white">Green</option>
+                    <option value="#3357FF" class="bg-blue text-white">Blue</option>
+                    <option value="#F1C40F" class="bg-yellow text-dark">Yellow</option>
+                    <option value="#9B59B6" class="bg-purple text-white">Purple</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-buttonText" class="form-label">Button Text:</label>
+                <input type="text" id="card-buttonText" class="form-control" value="Go" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-buttonLink" class="form-label">Button Link:</label>
+                <input type="text" id="card-buttonLink" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="card-tags" class="form-label">Tags (comma-separated):</label>
+                <input type="text" id="card-tags" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Add Card</button>
+        </form>
+
+        <h2 class="text-center mt-5">Existing Cards</h2>
+        <div id="cards-container" class="mt-4">
+            <!-- Cards will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

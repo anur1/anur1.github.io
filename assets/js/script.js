@@ -255,7 +255,7 @@ function homePageContent() {
                 const cardBackgroundColor = item.color; // Set background color
                 cardElement.innerHTML = `
 
-                <div id="${item.id}" class="card bg-info text-dark content-card mt-5 zoom-effect custom-card" style="background-color:${cardBackgroundColor} !important">
+                <div id="${item.id}" class="card bg-info text-dark content-card mt-3 zoom-effect custom-card" style="background-color:${cardBackgroundColor} !important">
                     <div class="card-body">
 
                         <div class="row">

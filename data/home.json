@@ -3,7 +3,7 @@
         {
             "id": "smart-cities",
             "link": "smart-cities",
-            "color": "#FF5722",
+            "color": "greenyellow",
             "image": {
                 "src": "./media/photo/homepage/smart-city.jpg",
                 "alt": "Smart City Digital Twin",
@@ -26,17 +26,16 @@
         {
             "id": "environmental",
             "link": "environmental",
-            "color": "#2196F3",
+            "color": "Aquamarine",
             "image": {
-                "src": "./media/photo/homepage/smart-city.jpg",
+                "src": "./media/photo/homepage/environmental.jpg",
                 "alt": "Environmental Digital Twin",
                 "class": "img-fluid custom-image"
             },
             "content": {
                 "title": "Environmental",
                 "paragraphs": [
-                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
-                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
+                    "A digital twin of environmental systems is a virtual representation that mirrors real-world ecosystems, weather patterns, or infrastructure to enhance monitoring and decision-making. By integrating real-time data and advanced simulations, these models help predict climate changes, optimize resource usage, and mitigate environmental risks. They are crucial tools for policymakers, researchers, and industries aiming to obtain sustainable solutions for environmental challenges."
                 ],
                 "keywords": [
                     "environmental Systems",
@@ -48,17 +47,16 @@
         {
             "id": "power-grids",
             "link": "power-grids",
-            "color": "#4CAF50",
+            "color": "Chartreuse",
             "image": {
-                "src": "./media/photo/homepage/smart-city.jpg",
+                "src": "./media/photo/homepage/power-grids.jpg",
                 "alt": "Power Digital Twin",
                 "class": "img-fluid custom-image"
             },
             "content": {
                 "title": "Power Grids",
                 "paragraphs": [
-                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
-                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
+                    "A digital twin of power grid systems is a virtual model that replicates the grid’s infrastructure, behavior, and operations using real-time data and advanced simulations. It helps utilities and operators optimize energy distribution, predict failures, and improve resilience against disruptions like extreme weather or cyberattacks. By enabling better decision-making and efficiency, digital twins play a key role in modernizing the electrical grid and supporting the transition to sustainable energy solutions"
                 ],
                 "keywords": [
                     "Power Grids",
@@ -70,18 +68,15 @@
         {
             "id": "others",
             "link": "others",
-            "color": "#FFC107",
+            "color": "Cyan",
             "image": {
-                "src": "./media/photo/homepage/smart-city.jpg",
+                "src": "./media/photo/homepage/others.jpg",
                 "alt": "Others",
                 "class": "img-fluid custom-image"
             },
             "content": {
                 "title": "Others",
-                "paragraphs": [
-                    "Smart city digital twins help urban planners optimize traffic flow, reduce energy consumption, and improve public safety.",
-                    "They enable cities to make data-driven decisions by simulating different scenarios before applying real-world changes."
-                ],
+                "paragraphs": "Digital twins exist across many industries, offering insights and optimization for various systems. Here are a few key types:- Manufacturing & Industrial Twins – Used in factories and production lines to simulate equipment, predict  maintenance needs, and improve efficiency. - Healthcare & Biomedical Twins – Digital replicas of organs, tissues, or even entire patients to assist in personalized medicine, surgery planning, and drug development. - Aerospace & Aviation Twins – Applied to aircraft and space systems to monitor performance, predict failures, and enhance operational safety. - Automotive & Transportation Twins – Virtual models of vehicles and logistics networks to improve autonomous driving, fleet management, and transportation efficiency. - Supply Chain & Logistics Twins – Helps optimize global supply networks, tracking materials, predicting disruptions, and reducing costs .These are just a few examples—digital twins are revolutionizing many fields, enabling smarter decision-making and innovation across industries. Are you interested in any specific applications?",
                 "keywords": [
                     "Smart cities",
                     "digital twin",

@@ -2,17 +2,18 @@
 
 
 .custom-body {
-  background-color: rgb(220, 255, 255);
+  background-color:white;
 }
 
 .custom-container {
   margin-left: 40px;
   margin-right: 40px;
-  background-color: rgb(210, 250, 250);
+  background-color: oldlace;
 
 }
 
 .custom-image {
+
     margin: 0px;
           background-size: 100% 100%;
           min-height: 25vh;
@@ -40,7 +41,7 @@
   top: 150px;
   left: 10;
   width: 200px;
-  background-color: rgb(220, 122, 175);
+  background-color:lavender;
       font-family: 'Finlandica', sans-serif;
 }
 
@@ -56,5 +57,5 @@
 
 .custom-nav-link {
   font-weight: bold;
-  background-color: rgb(199, 213, 130);
+  background-color: rgb(173, 32, 178);
 }

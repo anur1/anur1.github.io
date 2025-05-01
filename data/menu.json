@@ -4,7 +4,7 @@
       "id": "smart-cities",
       "name": "Smart Cities",
       "description": "",
-      "color": "#2196F3",
+      "color": "DeepSkyBlue",
       "isSubmenu": true,
       "submenu": [
         {
@@ -33,7 +33,7 @@
       "id": "environmental",
       "name": "Environmental",
       "description": "",
-      "color": "#4CAF50",
+      "color": "DeepSkyBlue",
       "isSubmenu": true,
       "submenu": [
         {
@@ -62,7 +62,7 @@
       "id": "power-grids",
       "name": "Power Grids",
       "description": "Power grid management and optimization.",
-      "color": "#FF5722",
+      "color": "DeepSkyBlue",
       "isSubmenu": true,
       "submenu": [
         {
@@ -91,7 +91,7 @@
       "id": "others",
       "name": "Others",
       "description": "Other DT solutions and technologies.",
-      "color": "#FFC107",
+      "color": "DeepSkyBlue",
       "isSubmenu": true,
       "submenu": [
         {
@@ -103,7 +103,12 @@
           "id": 3.2,
           "name": "Healthcare",
           "description": ""
-        }
+        },
+                {
+                  "id": 3.3,
+                  "name": "Logistics",
+                  "description": ""
+                }
       ]
     }
   ]

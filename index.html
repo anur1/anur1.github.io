@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
+
+
+
 </head>
 
 
@@ -21,72 +24,91 @@
 
 
 <body class="custom-body">
+
     <!-- ----------------------------------------------- -->
-    <!-- Placeholder for the navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>// Call the function to load the navbar
-        loadNavbar('navbar-placeholder', 'assets/html/navbar.html');
-    </script>
+    <!-- navbar -->
+    <div id="navbar-placeholder">
+        <!-- Navigation Menu -->
+        <nav class="navbar navbar-expand-lg  fixed-top custom-menu-container" style="background-color: #e3f2fd; opacity: 0.8;">
+            <div class="container">
+
+
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-house-fill"></i> <!--icon from bootstrap-->
+                    Digital Twin Wiki
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul id="menu-container" class="navbar-nav ms-auto">
+                        <!--Main menu items will be filled by javascript function-->
+                        <!--menu items come from menu.json-->
+                        <!--menu items are pushed by script.js/-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <!--Sub menu nav bar container-->
+        <nav class="navbar navbar-expand-lg fixed-top mt-5 custom-submenu-container" style="background-color: #e3f2fd; opacity: 0.6; "> 
+            <div class="container">
+                <ul id="submenu-container" class="navbar-nav ms-auto ">
+                    <!-- Submenu items will be added here by javascript function--->
+                </ul>
+            </div>
+        </nav>
+
+    </div>
     <br>
+    <!-- navbar ends here -->
     <!-- ----------------------------------------------- -->
 
 
+
+
+
     <!-- ----------------------------------------------- -->
-    <!-- Body's body -->
-    <div class="custom-container  mt-4" style="margin-left: 50; margin-right: 50;">
-        <br>
-        <div class="row">
+    <!-- Body's body   this part views all cards-->
+    <div class="custom-container mt-4 custom-margin-left"  >
+        <!-- 10 of 12 column -->
+        <div class="col-md-12">
+            <br> <br>
+            <div id="main-card-container" class=" all-cards-container">
+                <!-- Contents come here from javascript file-->
+            </div>
+            <div id="sub-card-container-smart-cities"
+                class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
 
-            <!-- ----------------------------------------------- -->
-            <!-- 2 of 12 column -->
-            <div class="col-md-2 card bg-light ">
-
-                <!-- Placeholder for the left sub menu navbar -->
-                <div id="leftsubmenu-placeholder"></div>
-                <script>// Call the function to load the navbar 
-                    loadLeftSubmenu('leftsubmenu-placeholder', 'assets/html/leftsubmenu.html');
-                </script>
-
+                <!-- Contents come here from javascript file-->
+            </div>
+            <div id="sub-card-container-environmental"
+                class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
+                <!-- Contents come here from javascript file-->
+            </div>
+            <div id="sub-card-container-power-grids"
+                class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
+                <!-- Contents come here from javascript file-->
+            </div>
+            <div id="sub-card-container-others"
+                class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
+                <!-- Contents come here from javascript file-->
             </div>
             <!-- ----------------------------------------------- -->
-
-
-            <!-- ----------------------------------------------- -->
-            <!-- 10 of 12 column -->
-            <div class="col-md-10">
-                <br> <br>
-                <div id="main-card-container" class=" all-cards-container">
-                    <!-- Contents come here from javascript file-->
-                </div>
-                <div id="sub-card-container-smart-cities"
-                    class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
-                    <div>
-                        <h1 class="display-4">Smart Cities</h1><br>
-
-                        <h3 class="display-6">Smart Cities are the #1 application area for Digital Twins.</h3>
-                        <br>
-
-                        <h4 class="display-7">Navigate the given examples to get some idea.</h4>
-                    </div>
-                    <!-- Contents come here from javascript file-->
-                </div>
-                <div id="sub-card-container-environmental"
-                    class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
-                    <!-- Contents come here from javascript file-->
-                </div>
-                <div id="sub-card-container-power-grids"
-                    class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
-                    <!-- Contents come here from javascript file-->
-                </div>
-                <div id="sub-card-container-others"
-                    class="all-cards-container  row row-cols-1 row-cols-md-3 g-4 custom-cols">
-                    <!-- Contents come here from javascript file-->
-                </div>
-                <!-- ----------------------------------------------- -->
-            </div>
         </div>
     </div>
 
+
+
+
+    <!-- Left sub menu nav  container, sub menu list is pushed from script.js -->
+    <ul id="leftmenu-container" class="navbar-nav ms-auto custom-left-fixed-submenu w-80 ms-0"
+        style="max-width: 65px;  position: fixed; top: 50%;     transform: translateY(-50%);     background-color: #e3f2fd; opacity: 0.6; ">
+        <!-- Submenu items will be added here by javascript function--->
+    </ul>
 
 </body>
 

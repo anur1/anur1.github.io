@@ -9,7 +9,7 @@
       "backgroundColor": "#F0FFF0",
       "buttonText": "Go",
       "buttonLink": "https://dtp-alkmaar.azurewebsites.net/twin",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -21,7 +21,7 @@
       "backgroundColor": "#FFE4E1",
       "buttonText": "Go",
       "buttonLink": "https://www.3drotterdam.nl/#/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -33,7 +33,7 @@
       "backgroundColor": "#E0FFFF",
       "buttonText": "Go",
       "buttonLink": "https://safeswim.org.nz/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -45,7 +45,7 @@
       "backgroundColor": "#FFF0F5",
       "buttonText": "Go",
       "buttonLink": "https://smap.seoul.go.kr/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -57,7 +57,7 @@
       "backgroundColor": "#F0F8FF",
       "buttonText": "Go",
       "buttonLink": "https://example.com/examine",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -69,7 +69,7 @@
       "backgroundColor": "#FFFACD",
       "buttonText": "Go",
       "buttonLink": "https://demos.littleworkshop.fr/infinitown",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -81,7 +81,7 @@
       "backgroundColor": "#E6E6FA",
       "buttonText": "Go",
       "buttonLink": "https://eu.opencitiesplanner.bentley.com/siemensstadt/s2startpage-public",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -93,7 +93,7 @@
       "backgroundColor": "#FFF5EE",
       "buttonText": "Go",
       "buttonLink": "https://loerrach.virtualcitymap.de/#/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -105,7 +105,7 @@
       "backgroundColor": "#F0FFF0",
       "buttonText": "Go",
       "buttonLink": "https://kassel.virtualcitymap.de/#/legend",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -117,7 +117,7 @@
       "backgroundColor": "#FFE4E1",
       "buttonText": "Go",
       "buttonLink": "https://citytwin.eu/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -129,7 +129,7 @@
       "backgroundColor": "#E0FFFF",
       "buttonText": "Go",
       "buttonLink": "https://nsw.digitaltwin.terria.io/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -141,7 +141,7 @@
       "backgroundColor": "#FFF0F5",
       "buttonText": "Go",
       "buttonLink": "https://lcdt-project.unsw.edu.au/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -153,7 +153,7 @@
       "backgroundColor": "#F0F8FF",
       "buttonText": "Go",
       "buttonLink": "https://kartta.hel.fi/3d/mesh/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -165,7 +165,7 @@
       "backgroundColor": "#FFFACD",
       "buttonText": "Go",
       "buttonLink": "https://digitaltwin.hkust.edu.hk/dt_webapp_integrated/?page=3D-GIS-Map",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -177,7 +177,7 @@
       "backgroundColor": "#E6E6FA",
       "buttonText": "Go",
       "buttonLink": "https://geoportal.barcelona.cat/planolBCN/en/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -189,7 +189,7 @@
       "backgroundColor": "#FFF5EE",
       "buttonText": "Go",
       "buttonLink": "https://gis-portal.espon.eu/arcgis/apps/experiencebuilder/experience/?id=e561b285ad2147fc8e5318015d49f422",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -201,7 +201,7 @@
       "backgroundColor": "#FFE4E1",
       "buttonText": "Go",
       "buttonLink": "https://sehirharitasiapi.ibb.gov.tr/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -213,7 +213,7 @@
       "backgroundColor": "#E0FFFF",
       "buttonText": "Go",
       "buttonLink": "https://kentrehberi.ankara.bel.tr/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -225,7 +225,7 @@
       "backgroundColor": "#FFF0F5",
       "buttonText": "Go",
       "buttonLink": "https://www.360konya.com/",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -237,7 +237,7 @@
       "backgroundColor": "#F0F8FF",
       "buttonText": "Go",
       "buttonLink": "https://cbs.kayseri.bel.tr/kayseri-kent-rehberi",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -249,7 +249,7 @@
       "backgroundColor": "#FFFACD",
       "buttonText": "Go",
       "buttonLink": "https://www.geoportail-urbanisme.gouv.fr/map/#tile=1&lon=2.424722&lat=46.76305599999998&zoom=6",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {
@@ -261,7 +261,7 @@
       "backgroundColor": "#E6E6FA",
       "buttonText": "Go",
       "buttonLink": "https://www.geoportail.gouv.fr/donnees/inpg",
-      "tags": "smartcities",
+      "tags": "cities",
       "subtitle": ""
     },
     {

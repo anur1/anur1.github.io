@@ -129,6 +129,30 @@ function fill_menuItems() {
 
 
 
+                            //BU ALAN BAĞIMSIZDIR, SONRADAN EKLENDİ
+                            //left slide animation starts
+                            const slideMenu = document.getElementById('leftmenu-container');
+
+                            // Show the image and slide it in
+                            slideMenu.style.display = 'block';
+                            slideMenu.style.animation = 'slideInFromLeft 1s forwards';
+
+
+                            // Wait for 5 seconds, then slide it out
+                            setTimeout(() => {
+                                slideMenu.style.animation = 'slideOutToLeft 1s forwards';
+
+                                // Hide the image after the slide-out animation completes
+                                setTimeout(() => {
+                                    slideMenu.style.display = 'none';
+                                }, 2000); // Match the duration of the slide-out animation
+                            }, 10000); // 5 seconds delay
+                            //left slide animation ends
+
+
+
+
+
 
 
 
@@ -213,34 +237,7 @@ function fill_menuItems() {
 
 
 
-/*navbarLoader.js:
-The loadNavbar function takes two parameters:
-placeholderId: The ID of the element where the navbar will be inserted.
-navbarPath: The path to the navbar.html file.
-It uses fetch to load the HTML content and inserts it into the specified placeholder.*/
-function loadNavbar(placeholderId, navbarPath) {
-    fetch(navbarPath)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(placeholderId).innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-}
 
-
-
-function loadLeftSubmenu(placeholderId, navbarPath) {
-    const placeholder = document.getElementById(placeholderId);
-    if (!placeholder.dataset.loaded) {
-        fetch(navbarPath)
-            .then(response => response.text())
-            .then(data => {
-                placeholder.innerHTML = data;
-                placeholder.dataset.loaded = true; // Mark as loaded
-            })
-            .catch(error => console.error('Error loading navbar:', error));
-    }
-}
 
 
 
